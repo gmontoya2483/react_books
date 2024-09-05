@@ -11,8 +11,8 @@ function App() {
     const {fetchBooks} = useBooksContext();
 
     useEffect(() => {
-         fetchBooks().then();
-    }, []);
+         fetchBooks();
+    }, [fetchBooks]);
 
 
 
